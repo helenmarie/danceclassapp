@@ -1,19 +1,24 @@
-=begin
-
 require 'test_helper'
 
 class DClassTest < ActiveSupport::TestCase
 
   def setup
-    @dclass = DClass.new(type: “example type”, day: “example day”, location: “example location”)
+    @dclass = DClass.new(dancetype: "Example Type", day: "Example Day", location: "example location")
   end
 
-  test “type should be present” do
-    @dclass.type = “”
-    assert_not @user.valid?
+  test "dancetype should be present" do
+    @dclass.dancetype = ""
+    assert_not @dclass.valid?
   end
 
+  test "day should be present" do
+    @dclass.dancetype = ""
+    assert_not @dclass.valid?
+  end
+
+  test "location should be present" do
+    @dclass.dancetype = ""
+    assert_not @dclass.valid?
+  end
 end
-
-=end
 

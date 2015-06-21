@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  type: 
+  dancetype: 
   day: MyString
   location: MyString
 
 two:
-  type: 
+  dancetype: 
   day: MyString
   location: MyString

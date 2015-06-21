@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150609200547) do
+ActiveRecord::Schema.define(version: 20150617201012) do
 
   create_table "d_classes", force: :cascade do |t|
-    t.string   "type"
+    t.string   "dancetype"
     t.string   "day"
     t.string   "location"
     t.datetime "created_at", null: false
