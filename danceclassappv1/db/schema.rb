@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150617201012) do
+ActiveRecord::Schema.define(version: 20150625200104) do
 
   create_table "d_classes", force: :cascade do |t|
     t.string   "dancetype"

@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+    resources :d_class
     #root to: 'static_pages/home'
     root 'static_pages#home'
-    get 'addnewclass' =>'d_class#new'
+   # get 'addnewclass' =>'d_class#new'
     get 'd_class/list'
+    
   
 
   # The priority is based upon order of creation: first created -> highest priority.

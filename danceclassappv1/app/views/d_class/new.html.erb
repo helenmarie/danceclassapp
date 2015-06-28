@@ -1,3 +1,22 @@
 <h1>DClass#new</h1>
 <p>Find me in app/views/d_class/new.html.erb</p>
 <p> This is going to be the page where you add new dance classes </p>
+
+<h1>Add new class </h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for @dclass, url:d_class_index_path do |f| %>
+      <%= f.label :dancetype %>
+      <%= f.text_field :dancetype %>
+
+      <%= f.label :day %>
+      <%= f.text_field :day %>
+
+      <%= f.label :location %>
+      <%= f.text_field :location %>
+
+      <%= f.submit  %>
+    <% end %>
+  </div>
+</div>la
