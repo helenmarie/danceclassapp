@@ -11,8 +11,12 @@ class DClassController < ApplicationController
 
   def create
     @dclass = DClass.new(dclass_params)
-    @dclass.save
-    redirect_to @dclass
+    if @dclass.save
+      flash[:success] = "New class successfully added!"
+      redirect_to @dclass
+    else
+      render 'new'
+    end
   end
 
   def index

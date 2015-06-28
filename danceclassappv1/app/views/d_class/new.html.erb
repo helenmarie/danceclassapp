@@ -7,16 +7,18 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for @dclass, url:d_class_index_path do |f| %>
+      <%= render 'shared/error_messages' %>
       <%= f.label :dancetype %>
-      <%= f.text_field :dancetype %>
-
+      <%= f.text_field :dancetype, class: 'form-control' %>
       <%= f.label :day %>
-      <%= f.text_field :day %>
+      <%= f.text_field :day, class: 'form-control' %>
 
       <%= f.label :location %>
-      <%= f.text_field :location %>
+      <%= f.text_field :location, class: 'form-control' %>
 
       <%= f.submit  %>
     <% end %>
   </div>
-</div>la
+</div>
+
+
