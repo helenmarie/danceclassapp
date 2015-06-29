@@ -1,0 +1,12 @@
+<h1> All dance classes </h1>
+
+<ul class=“dclasses”>
+  <% @dclass.each do |dclass| %>
+    <li>
+      <%= link_to dclass.dancetype, dclass %>
+      <%= dclass.day %>
+      <%= dclass.location %>
+    </li>
+  <% end %>
+</ul>
+

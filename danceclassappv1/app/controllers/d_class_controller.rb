@@ -20,8 +20,8 @@ class DClassController < ApplicationController
   end
 
   def index
+    @dclass = DClass.all
   end
-  
 
 
   def list
