@@ -13,17 +13,21 @@ class DClassController < ApplicationController
     end
   end
 
+  #def list
+   # @dclass = DClass.search(params[:search])
+    #render 'list'
+  #end
+
   def list
     @dclass = DClass.search(params[:search])
-          #if @dclass.dancetype =nil
-    render 'list'
-          #else
-          #end
+    numclasses = @dclass.count
+    if numclasses == 0
+      flash[:failure] = "no classes found, please search again"
+      redirect_to "/"
+    else
+      render 'list'
+    end
   end
-
-  #def search
-   # @dclass = DClass.search(params[:search])
-  #end
 
   def show
     @dclass = DClass.find(params[:id])
@@ -31,7 +35,6 @@ class DClassController < ApplicationController
 
   def index
     @dclass = DClass.all
-    #render 'list'
   end
 
   

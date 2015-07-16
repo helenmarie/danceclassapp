@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
     get 'd_class/list' => 'd_class#list'
-    #get 'd_class/index' => 'd_class#index'
     resources :d_class
     #root to: 'static_pages/home'
     root 'static_pages#home'
-    get 'd_class/search' =>  'd_class#search'
+    #get 'd_class/search' =>  'd_class#search'
     
   
 

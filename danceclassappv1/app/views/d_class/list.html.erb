@@ -4,6 +4,11 @@
 
 <h1> All dance classes </h1>
 <p>
+ <% if @dclass.empty? %>
+     <p> no results, try again </p>
+     <%= render "shared/searchform" %>
+ <% else %>
+
   <% @dclass.each do |dclass| %>
     <li>
       <%= dclass.dancetype %>
@@ -11,6 +16,7 @@
       <%= dclass.location %>
     </li>
   <% end %>
+ <% end %>
 </p>
 
 

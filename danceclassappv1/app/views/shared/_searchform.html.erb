@@ -1,0 +1,12 @@
+<h1>Dance Class App</h1>
+<p> Search for your dance class here </p>
+
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_tag(d_class_list_path,:method => "get",id: "search-form") do %>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "search", :name => nil %>
+    <% end %>
+  </div>
+</div>
